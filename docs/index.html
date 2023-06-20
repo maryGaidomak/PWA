@@ -1,198 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="styles.css">
-  <title>My Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript для новичков</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <header>
-    <nav>
-      <div class="logo">My Portfolio</div>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <div class="image-block">
-      <img src="img/quino-al-mBQIfKlvowM-unsplash.jpg" alt="Изображение">
-      <div class="overlay">
-        <h2>Mariia Gaidomak</h2>
-        <p>BACK-END DEVELOPER</p>
-      </div>
-    </div>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>На данный момент я - студентка Саратовского Государственного Технического Универстита. Я учусь по профилю Информационные системы и технологии.
-        Также я работаю backend-разработчиком в компании, предоставляющий информационные услуги различным заказчикам.</p>
-      <p>У меня есть опыт работы с различными языками программирования и фреймворками, в основном я работаю с c#/.NET. Я стараюсь постоянно учиться, изучать новые технологии и применять их в работе или личных проектах.</p>
-    </section>
-    <section id="skills">
-      <div class="base-block">
-        <h3>Skills</h3>
-        <ul class="skills-list">
-          <li>
-            <span class="skill-name">HTML5</span>
-            <div class="progress-bar">
-              <div class="progress"></div>
-            </div>
-            <span class="skill-level">Intermediate</span>
-          </li>
-          <li>
-            <span class="skill-name">CSS3</span>
-            <div class="progress-bar">
-              <div class="progress"></div>
-            </div>
-            <span class="skill-level">Intermediate</span>
-          </li>
-          <li>
-            <span class="skill-name">JavaScript</span>
-            <div class="progress-bar">
-              <div class="progress"></div>
-            </div>
-            <span class="skill-level">Intermediate</span>
-          </li>
-          <li>
-            <span class="skill-name">Python</span>
-            <div class="progress-bar">
-              <div class="progress"></div>
-            </div>
-            <span class="skill-level">Intermediate</span>
-          </li>
-          <li>
-            <span class="skill-name">C#</span>
-            <div class="progress-bar">
-              <div class="progress"></div>
-            </div>
-            <span class="skill-level">Proficient</span>
-          </li>
-          <li>
-            <span class="skill-name">SQL</span>
-            <div class="progress-bar">
-              <div class="progress"></div>
-            </div>
-            <span class="skill-level">Proficient</span>
-          </li>
-          <li>
-            <span class="skill-name">RESTful APIs</span>
-            <div class="progress-bar">
-              <div class="progress"></div>
-            </div>
-            <span class="skill-level">Proficient</span>
-          </li>
-        </ul>
-      </div>
-    </section>
-    
-    <section id="education">
-      <div class="base-block">
-        <h3>Education</h3>
-        <ul class="education-list">
-          <li>
-            <span class="education-title">ППК СГТУ имени Гагарина Ю.А</span>
-            <span class="education-date">2018 - 2022</span>
-            <span class="education-description">Информационные системы и программирование</span>
-          </li>
-          <li>
-            <span class="education-title">Roko University</span>
-            <span class="education-date">Сентябрь 2021 - Ноябрь 2021</span>
-            <span class="education-description">Курсы с получением сертификата</span>
-          </li>
-          <li>
-            <span class="education-title">СГТУ имени Гагарина Ю.А</span>
-            <span class="education-date">2022 - настоящий момент</span>
-            <span class="education-description">Информационные системы и технологии (Бакалавриат)</span>
-          </li>
-        </ul>
-      </div>
-    </section>
+    <header>
+        <h1>Добро пожаловать,</h1>
+        <h2 id="username"></h2>
+    </header>
 
-    <section id="projects">
-      <div class="base-block">
-        <h3>Projects</h3>
-        <span class="before-projects-description">Здесь должны быть расположены ссылки на личные проекты, но так как они пока не находятся в законенном состянии, здесь представленны ссылки на другие практические задания</span>
-        <ul class="project-list">
-          <li>
-            <span class="project-title">Прототип сайта</span>
-            <span class="project-description">Прототип одностраничного сайта, разработанный при помощи конструктора Tilda.</span>
-            <a class="github-link" href="https://github.com/maryGaidomak/PWA">
-              <img src="img/github-sign.png" alt="GitHub">
-            </a>
-          </li>
-          <li>
-            <span class="project-title">Сайт-визитка</span>
-            <span class="project-description">Вы находитесь здесь.</span>
-            <a class="github-link" href="https://github.com/maryGaidomak/PWA">
-              <img src="img/github-sign.png" alt="GitHub">
-            </a>
-          </li>
-          <li>
-            <span class="project-title">Web-письмо</span>
-            <span class="project-description">Web-письмо для email рассылки.</span>
-            <a class="github-link" href="https://github.com/maryGaidomak/PWA">
-              <img src="img/github-sign.png" alt="GitHub">
-            </a>
-          </li>
-          <li>
-            <span class="project-title">Web-форма регистрации</span>
-            <span class="project-description">Форма регистрации, разработанная по заданию от заказчика.</span>
-            <a class="github-link" href="https://github.com/maryGaidomak/PWA">
-              <img src="img/github-sign.png" alt="GitHub">
-            </a>
-          </li>
-          <li>
-            <span class="project-title">Вёрстка страницы + js</span>
-            <span class="project-description">Страница построенная с помощью flexform и использованием javascipt.</span>
-            <a class="github-link" href="https://github.com/maryGaidomak/PWA">
-              <img src="img/github-sign.png" alt="GitHub">
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section>
-    
+    <main>
+        <section class ="section-javascript">
+            <h2>JavaScript: общие сведения</h2>
+            <p>
+                JavaScript (JS) - это язык программирования, который широко используется для создания интерактивных
+                веб-страниц. Он позволяет добавлять функциональность, управлять содержимым страницы, взаимодействовать с
+                пользователем и многое другое.
+            </p>
+            <p>
+                JS используется для создания динамических веб-сайтов, веб-приложений, разработки мобильных приложений и
+                даже для создания серверной части приложений.
+            </p>
+            <p>
+                JS можно использовать для создания интерактивных форм, анимаций, валидации данных, отправки запросов на
+                сервер, создания игр и многих других вещей.
+            </p>
+            <p>
+                Однако, JavaScript не подходит для написания системных программ, таких как операционные системы или
+                драйверы устройств.
+            </p>
+        </section>
 
-    <section id="contact">
-      <div class="base-block">
-        <h3>Contact me</h3>
-        <ul class="social-links">
-          <li>
-            <a href="https://www.instagram.com/your_username" target="_blank">
-              <img src="img/instagram.png" alt="Instagram">
-            </a>
-          </li>
-          <li>
-            <a href="mailto:your_email@gmail.com" target="_blank">
-              <img src="img/gmail-logo.png" alt="Gmail">
-            </a>
-          </li>
-          <li>
-            <a href="https://t.me/your_username" target="_blank">
-              <img src="img/instagram.png" alt="Telegram">
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com/your_username" target="_blank">
-              <img src="img/twitter.png" alt="Twitter">
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section>
+        <div class="container">
+            <h1>Приветствие пользователя</h1>
+            <div id="greeting">
+            <span id="username"></span>
+            </div>
+            <div id="inputForm">
+            <label for="nameInput">Введите ваше имя:</label>
+            <input type="text" id="nameInput">
+            <button id="submitButton">Подтвердить</button>
+            </div>
+        </div>
+
+        <section class="task-menu ">
+            <h2>Навигация:</h2>
+            <ul>
+                <li><a href="#task1">Площадь треугольника</a></li>
+                <li><a href="#task2">Сравнение строк</a></li>
+                <li><a href="#task3">Минимальное и максимальное значение массива</a></li>
+                <li><a href="#task4">Таймер</a></li>
+                <li><a href="#task5">Тест по JavaScript</a></li>
+                <li><a href="#task6">Заставка на весь экран</a></li>
+            </ul>
+        </section>
+        <div class="exercises-container">
+           
+            <section id="task1">
+                <h2>Задача 1: Площадь треугольника</h2>
+                <p>Введите основание и высоту треугольника:</p>
+                <input type="number" id="base" placeholder="Основание">
+                <input type="number" id="height" placeholder="Высота">
+                <button id ="calculateButton" onclick="calculateTriangleArea()">Рассчитать площадь</button>
+                <p id="triangleArea"></p>
+            </section>
+        
     
+            <section id="task2">
+                <h2>Задача 2: Сравнение строк</h2>
+                <p>Введите две строки:</p>
+                <input type="text" id="string1" placeholder="Строка 1">
+                <input type="text" id="string2" placeholder="Строка 2">
+                <button onclick="compareStrings()">Сравнить строки</button>
+                <p id="stringComparisonResult"></p>
+            </section>
     
-  </main>
-  <footer>
-    <p>&copy; 2023 My Portfolio. All rights reserved.</p>
-  </footer>
+            <section id="task3">
+                <h2>Задача 3: Минимальное и максимальное значение массива</h2>
+                <p>Введите 5 элементов массива:</p>
+                <input type="number" id="element1" placeholder="Элемент 1">
+                <input type="number" id="element2" placeholder="Элемент 2">
+                <input type="number" id="element3" placeholder="Элемент 3">
+                <input type="number" id="element4" placeholder="Элемент 4">
+                <input type="number" id="element5" placeholder="Элемент 5">
+                <button onclick="findMinMax()">Найти минимальное и максимальное значение</button>
+                <p id="minMaxResult"></p>
+            </section>
+        
+    
+            <section id="task4">
+                <h2>Задача 4: Таймер</h2>
+                <button onclick="startTimer()">Начать отсчет</button>
+                <button onclick="stopTimer()">Остановить отсчет</button>
+                <button onclick="getTimeElapsed()">Посмотреть время</button>
+                <p id="timer"></p>
+            </section>
+    
+            <section id="task5">
+                <h2>Задача 5: Тест по JavaScript</h2>
+                <button id="startButton" onclick="startTest()">Начать тест</button>
+                <div id="testQuestions" style="display: none;">
+                  <div id="questionContainer"></div>
+                  <button id="nextButton" style="display: none;">Дальше</button>
+                </div>
+                <button onclick="submitTest()">Завершить тест</button>
+                <div id="testResults" style="display: none;"></div>
+            </section>
+            
+    
+            <section id="task6">
+                <h2>Задача 6: Заставка на весь экран</h2>
+                <button onclick="showOverlay()">Показать заставку</button>
+                <div id="overlay" onclick="hideOverlay()">
+                    <div class="overlay-content">
+                        <h3>С возвращением, <span id="overlayUsername"></span>!</h3>
+                        <p>Сегодняшняя дата: <span id="overlayDate"></span></p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+    </main>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
