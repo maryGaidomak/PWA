@@ -7,7 +7,7 @@ body {
 }
 
 header, main {
-  padding: 20px;
+  padding: 20px 20px 0px 20px;
 }
 
 h1, h2 {
@@ -85,21 +85,52 @@ h1, h2 {
 
 
 
-/* Адаптивность для мобильных устройств */
-@media (max-width: 768px) {
+/* Адаптивность */
+@media (max-width: 411px) {
+  /* Стили для мобильных устройств*/
   header {
     text-align: center;
+    padding: 10px;
   }
 
   #username {
-    text-align: right;
+    text-align: center;
     margin-bottom: 10px;
   }
 
   section {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+  }
+
+  .exercises-container section {
+    width: 100%;
+    min-width: auto;
+    max-width: none;
+  }
+
+  .exercises-container input[type="number"],
+  .exercises-container input[type="text"] {
+    width: 100%;
   }
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Стили для планшетов */
+  header {
+    padding: 30px;
+  }
+
+  main {
+    padding: 40px;
+  }
+
+  .exercises-container section {
+    width: calc(50% - 20px);
+    min-width: auto;
+    max-width: none;
+  }
+}
+
 
 /* Стили для заставки на весь экран */
 #overlay {
@@ -263,4 +294,15 @@ button:active {
 .exercises-container p[id^="testResults"] {
   margin-top: 10px;
   font-weight: bold;
+}
+
+
+.prettyJS {
+  border-radius: 5px;
+  border: #666 3px solid;
+  padding: 10px;
+}
+
+.prettyJS p {
+  margin-top: 0px;
 }
