@@ -1,4 +1,4 @@
-function task0 () {
+function p1task0 () {
     // 0. Создать переменную, узнать ее тип, добавить вывод на экран текста, в зависимости от значения (if else)
 
     let userInput = prompt("Введите значение: ");
@@ -14,7 +14,7 @@ function task0 () {
     }
 }
 
-function task1() {
+function p1task1() {
     /* 1. запросить у пользователя знак зодиака, и в зависимости от ответа выдать всплывающее окно приветствия 
     (вместо знака зодиака, можно запросить другие данные, предполагающие несколько вариантов ответа) (switch)
     */
@@ -65,7 +65,7 @@ function task1() {
 
 }
 
-function task2() {
+function p1task2() {
     // 2. Вывести все числа от 1 до 40, с использованием 3-х разных циклов
 
     console.log(`Числа от 1 до 40, выводятся циклом for`);
@@ -89,7 +89,7 @@ function task2() {
 
 }
 
-function task3() {
+function p1task3() {
     // 3. Создайте вирусную страницу с постоянно повторяющемся сообщением
 
     function showAlert() {
@@ -100,7 +100,7 @@ function task3() {
     showAlert();
 }
 
-function task4() {
+function p1task4() {
     /* 4. Запросить у пользователя любое число больше 5, в случае правильного ответа выдать окошко с поздравлением, 
     в случае неправильного ответа вывести повторное окно с вопросом 
     (помните, что пользователь может нажать "отмена", помните о типах данных)
@@ -123,7 +123,7 @@ function task4() {
     } while (true);
 }
 
-function task5() {
+function p1task5() {
     // 5. Выведите четные числа от 8 до 20
     for (let i = 8; i <= 20; i++) {
         if (i % 2 === 0) {
@@ -132,7 +132,7 @@ function task5() {
     }
 }
 
-function task6() {
+function p1task6() {
     // 6. выведите нечетные числа от 1 до 7, пропустив 5
     for (let i = 1; i <= 7; i++) {
         if (i % 2 !== 0 && i !== 5) {
@@ -140,43 +140,6 @@ function task6() {
         }
     }
 }
-
-
-let answer = true;
-while (answer) {
-    let taskNumber = prompt("Введите номер задания (0-6):");
-    switch(taskNumber) {
-        case '0':
-            task0();
-            break;
-        case '1':
-            task1();
-            break;
-        case '2':
-            task2();
-            break;
-        case '3':
-            task3();
-            break;
-        case '4':
-            task4();
-            break;
-        case '5':
-            task5();
-            break;
-        case '6':
-            task6();
-            break;
-        case null:
-            answer = false;
-            break;
-        default:
-            alert("Неверный номер задания.");
-            break;
-    }
-}
-
-
 
 
 

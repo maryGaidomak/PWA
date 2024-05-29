@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Introduction</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="intro">
+        <h1>Что такое JavaScript?</h1>
+        <p>JavaScript — это язык программирования, который позволяет делать веб-страницы интерактивными. Его можно использовать для создания динамических обновлений контента, анимаций, управления мультимедиа, и многого другого.</p>
+        <h2>Для чего можно использовать JavaScript?</h2>
+        <ul>
+            <li>Создание интерактивных веб-страниц</li>
+            <li>Разработка веб-приложений</li>
+            <li>Работа с сервером (Node.js)</li>
+            <li>Игры, мобильные приложения, и многое другое</li>
+        </ul>
+        <h2>Когда JavaScript не подходит?</h2>
+        <ul>
+            <li>Обработка больших данных на стороне клиента</li>
+            <li>Создание сложных графических приложений (лучше использовать другие технологии)</li>
+        </ul>
+    </div>
+
+    <div class="demo">
+        <div class="block">
+            <p>Задания практики 1</p>
+            <div class="button-row">
+                <button onclick="p1task0()">Задание 0</button>
+                <button onclick="p1task1()">Задание 1</button>
+                <button onclick="p1task2()">Задание 2</button>
+            </div>
+            <div class="button-row">
+                <button onclick="p1task3()">Задание 3</button>
+                <button onclick="p1task4()">Задание 4</button>
+                <button onclick="p1task5()">Задание 5</button>
+            </div>
+            <div class="button-row">
+                <button onclick="p1task6()">Задание 6</button>
+            </div>
+        </div>
+        <div class="block">
+            <p>Задания практики 2</p>
+            <div class="button-row">
+                <button onclick="p2task1()">Задание 1</button>
+                <button onclick="p2task2()">Задание 2</button>
+                <button onclick="p2task3()">Задание 3</button>
+                <button onclick="p2task4()">Задание 4</button>
+                <button onclick="p2task5()">Задание 5</button>
+            </div>
+            <div class="button-row">
+                <button onclick="p2task6()">Задание 6</button>
+                <button onclick="p2task8()">Задание 8</button>
+                <button onclick="p2task9()">Задание 9</button>
+                <button onclick="p2task10()">Задание 10</button>
+                <button onclick="p2task11()">Задание 11</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="quiz">
+        <h2>Тест по JavaScript</h2>
+        <form id="quiz-form">
+            <div class="question">
+                <label>Вопрос 1: Какой оператор используется для присваивания значения переменной?</label><br>
+                <input type="radio" name="q1" value="a"> a) =<br>
+                <input type="radio" name="q1" value="b"> b) ==<br>
+                <input type="radio" name="q1" value="c"> c) ===<br>
+            </div>
+            <div class="question">
+                <label>Вопрос 2: Как объявить функцию в JavaScript?</label><br>
+                <input type="radio" name="q2" value="a"> a) function myFunction() {}<br>
+                <input type="radio" name="q2" value="b"> b) def myFunction() {}<br>
+                <input type="radio" name="q2" value="c"> c) function:myFunction() {}<br>
+            </div>
+            <div class="question">
+                <label>Вопрос 3: Как создать объект в JavaScript?</label><br>
+                <input type="radio" name="q3" value="a"> a) var obj = {}<br>
+                <input type="radio" name="q3" value="b"> b) var obj = []<br>
+                <input type="radio" name="q3" value="c"> c) var obj = ()<br>
+            </div>
+            <div class="question">
+                <label>Вопрос 4: Какой метод используется для добавления элемента в конец массива?</label><br>
+                <input type="radio" name="q4" value="a"> a) push()<br>
+                <input type="radio" name="q4" value="b"> b) pop()<br>
+                <input type="radio" name="q4" value="c"> c) shift()<br>
+            </div>
+            <div class="question">
+                <label>Вопрос 5: Какой результат у выражения 2 + '2' в JavaScript?</label><br>
+                <input type="radio" name="q5" value="a"> a) 4<br>
+                <input type="radio" name="q5" value="b"> b) '22'<br>
+                <input type="radio" name="q5" value="c"> c) NaN<br>
+            </div>
+            <div class="question">
+                <label>Вопрос 6: Как проверить, является ли переменная `x` массивом?</label><br>
+                <input type="radio" name="q6" value="a"> a) x.isArray()<br>
+                <input type="radio" name="q6" value="b"> b) Array.isArray(x)<br>
+                <input type="radio" name="q6" value="c"> c) typeof x === 'array'<br>
+            </div>
+            <div class="question">
+                <label>Вопрос 7: Какое значение возвращает метод `indexOf`, если элемент не найден?</label><br>
+                <input type="radio" name="q7" value="a"> a) -1<br>
+                <input type="radio" name="q7" value="b"> b) null<br>
+                <input type="radio" name="q7" value="c"> c) undefined<br>
+            </div>
+            <div class="question">
+                <label>Вопрос 8: Что делает метод `map` в массиве?</label><br>
+                <input type="radio" name="q8" value="a"> a) Создает новый массив с результатами вызова указанной функции для каждого элемента<br>
+                <input type="radio" name="q8" value="b"> b) Изменяет существующий массив, заменяя каждый элемент на результат вызова указанной функции<br>
+                <input type="radio" name="q8" value="c"> c) Фильтрует элементы массива на основе указанной функции<br>
+            </div>
+            <div class="question">
+                <label>Вопрос 9: Как вызвать функцию `myFunction` через 2 секунды?</label><br>
+                <input type="radio" name="q9" value="a"> a) setTimeout(myFunction, 2000)<br>
+                <input type="radio" name="q9" value="b"> b) setInterval(myFunction, 2000)<br>
+                <input type="radio" name="q9" value="c"> c) setTimeout(myFunction(), 2000)<br>
+            </div>
+            <div class="question">
+                <label>Вопрос 10: Как остановить выполнение функции, запущенной через `setInterval`?</label><br>
+                <input type="radio" name="q10" value="a"> a) clearInterval()<br>
+                <input type="radio" name="q10" value="b"> b) clearTimeout()<br>
+                <input type="radio" name="q10" value="c"> c) stopInterval()<br>
+            </div>
+            <button type="button" onclick="checkQuiz()">Отправить</button>
+        </form>
+        <div id="results"></div>
+    </div>
+
+    <button id="fullscreen-btn">Показать заставку</button>
+
+    <div id="overlay">
+        <div class="overlay-content">
+            <h1 id="overlay-date"></h1>
+            <h2 id="overlay-username"></h2>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="script1.js"></script>
+    <script src="script2.js"></script>
+</body>
+</html>
